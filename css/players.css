@@ -1,0 +1,29 @@
+.container .row{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.row .card{
+  width: 123px;
+  height:200px;
+  margin: 50px;
+  text-align: center;
+  margin-bottom: auto;
+}
+
+@media only screen and (min-width: 768px){
+
+  .card:first-child, .card:last-child{
+    margin-top: 100px;
+  }
+
+  .row.second .card:nth-child(2), .row.second .card:nth-child(3){
+    margin-top: 100px;
+  }
+
+  .row.second .card:first-child,.row.second .card:last-child{
+    margin-top: 50px;
+  }
+
+}

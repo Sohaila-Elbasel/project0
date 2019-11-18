@@ -1,0 +1,31 @@
+.card.mb-3.european, .card.mb-3 {
+  margin: 25px;
+  border-bottom: 1px solid #AE994E;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+
+.card.mb-3.european {
+  background-color: #f8f9fa;
+}
+
+.row img:first-child {
+  max-width: 145px;
+}
+
+.card h5 {
+  color: #AE994E;
+}
+
+@media only screen and (max-width: 767px) {
+  h5, p {
+    text-align: center;
+  }
+
+  .row img {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=trophies.css.map */

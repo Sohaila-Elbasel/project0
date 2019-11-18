@@ -1,0 +1,40 @@
+$number-color: #AE994E;
+$bg-color: #f8f9fa;
+
+%cards{
+  margin: 25px;
+  border-bottom: 1px solid $number-color;
+  display: flex;
+  justify-content: center;
+  height: 200px;
+}
+
+.card.mb-3{
+  @extend %cards;
+}
+
+.card.mb-3.european{
+  @extend %cards;
+  background-color: $bg-color;
+}
+.row{
+    img:first-child{
+      max-width: 145px;
+    }
+}
+.card{
+  h5{
+    color: $number-color;
+  }
+}
+
+@media only screen and (max-width: 767px){
+  h5, p{
+    text-align: center;
+  }
+  .row{
+    img{
+      display: none;
+    }
+  }
+}
